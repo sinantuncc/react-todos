@@ -2,7 +2,7 @@
 
 A to-do list application made with React
 
-![react-todos-img](https://github.com/snntnc/react-todos)
+![react-todos-img](https://github.com/snntnc/react-todos/screenshots/react-todos-1.png)
 
 ## Overview
 

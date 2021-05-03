@@ -2,8 +2,6 @@
 
 A to-do list application made with React
 
-![react-todos-img](https://github.com/snntnc/react-todos/screenshots/blob/master/react-todos-1.png?raw=true)
-
 ## Overview
 
 A simple to-do list application

@@ -4,9 +4,10 @@ const TodoItems = (props) => {
   const { todo, markComplete, delTodo } = props;
 
   let textDecoration = todo.completed ? "line-through" : "none";
+  let fontStyle = todo.completed ? "italic" : "normal";
 
   return (
-    <li style={{ textDecoration }} className="my-2">
+    <li style={{ textDecoration, fontStyle }} className="my-2">
       <Row>
         <Col>
           <Input
@@ -23,7 +24,7 @@ const TodoItems = (props) => {
             outline
             color="danger"
             size="sm"
-            onClick={() => delTodo(todo)}
+            onClick={() => delTodo(todo.id)}
           >
             Remove
           </Button>

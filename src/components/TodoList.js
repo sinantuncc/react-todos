@@ -2,7 +2,6 @@ import { Fragment, useState } from "react";
 import { List } from "reactstrap";
 import { v4 as uuidv4 } from "uuid";
 import AddTodo from "./AddTodo";
-import DeletedTodos from "./DeletedTodos";
 import SearchTodo from "./SearchTodo";
 import TodoDetails from "./TodoDetails";
 
@@ -11,7 +10,6 @@ import TodoItems from "./TodoItems";
 const TodosList = (props) => {
   const [todos, setTodos] = useState([]);
   const [search, setSearch] = useState("");
-  const [deletedTasks, setDeleteTasks] = useState([]);
 
   // Add a new todo
   const addTodo = (title) => {
@@ -33,13 +31,8 @@ const TodosList = (props) => {
   };
 
   // Delete a todo
-  const delTodo = (task) => {
-    setTodos(todos.filter((todo) => todo.id !== task.id));
-    let newDeletedTask = {
-      id: task.id,
-      title: task.title,
-    };
-    setDeleteTasks([...deletedTasks, newDeletedTask]);
+  const delTodo = (id) => {
+    setTodos(todos.filter((todo) => todo.id !== id));
   };
 
   // Search in todos function
@@ -77,7 +70,6 @@ const TodosList = (props) => {
       ) : (
         <h6 className="text-center">Todo List Empty</h6>
       )}
-      {deletedTasks.length > 0 ? <DeletedTodos deletedTasks={deletedTasks} /> : ""}
     </div>
   );
 };

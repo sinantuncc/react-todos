@@ -2,7 +2,7 @@
 
 A to-do list application made with React
 
-Site Link [https://react-basic-todos.netlify.app/]
+Site Link https://react-basic-todos.netlify.app/
 
 ## Overview
 
@@ -16,4 +16,4 @@ Clone the repository and `cd` into it is root directory
 Run `npm install` to install dependencies
 Run `npm start` from the project directory to run in development mode
 
-The application is served at [http://localhost:3000]
+The application is served at http://localhost:3000

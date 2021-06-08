@@ -2,7 +2,7 @@
 
 A to-do list application made with React
 
-Site Link:  https://react-basic-todos.netlify.app/
+[Demo](https://react-basic-todos.netlify.app/)
 
 ## Overview
 
